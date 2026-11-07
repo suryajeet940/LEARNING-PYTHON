@@ -1,6 +1,9 @@
-# PYTHON LEARNING JOURNEY
+# **PYTHON LEARNING JOURNEY!**
 
 This repository contains my python practice pragrams as I learn:
+---
+## TOPICS COVERED:
 
-*DICTIONARY
-*SET
+### DATA STRUCTURES
+* **DICTIONARY**-- learning key-value paires, nested dictionaries and common methods.
+* **SET** 
