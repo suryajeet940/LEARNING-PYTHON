@@ -36,27 +36,94 @@
 #     print(nums,idx)
 #     idx+=1
 
-nums=[1,2,5,48,3,4,5,9,7]
-x=48
-i=0
-while i<len(nums):
-    if (nums[i]==x):
-        print("found at index:",i)
-    else:
-        print("not found.")
-    i+=1
+# nums=[1,2,5,48,3,4,5,9,7]
+# x=48
+# i=0
+# while i<len(nums):
+#     if (nums[i]==x):
+#         print("found at index:",i)
+#     else:
+#         print("not found.")
+#     i+=1
 
-i=1
-while i<10:
-    print(i)
-    if(i==5):
-        break
-    i+=1
+# i=1
+# while i<10:
+#     print(i)
+#     if(i==5):
+#         break
+#     i+=1
 
-i=1
-while i<10:
-    if(i==5):
-        i+=1
-        continue
-    print(i)
-    i+=1
+# i=1
+# while i<10:
+#     if(i==5):
+#         i+=1
+#         continue
+#     print(i)
+#     i+=1
+
+
+# **FOR LOOP**
+
+# nums =[1,2,3,4,5,6,7,89,9]
+# for el in nums:
+#     print(el)
+
+# str="SURYAJEET"
+# for nu in str:
+#     print(nu)
+
+# str="surya"
+# for char in str:
+#     if char=="r":
+#         break
+#     print(char)    
+
+# str="surya"
+# for char in str:
+#     if char =="u":
+#         continue
+#     print(char)
+
+# dtr="surya"
+# for char in dtr:
+#     if char=="y":
+#         print("found y",char)
+#         continue
+#     else:
+#         print("not fond",char)
+
+
+# nums=(1,2,58,4,5,7,8,6,58)
+# x=58
+# idx=0
+# for el in nums:
+#     if el==x:
+#         print("no. found at idx:",idx)
+#         continue
+
+#     idx+=1
+
+#RANGE FUNCTION!!
+
+# seq=range(5)
+# for i in seq:
+#     print(i)
+
+# seq=range(5,10)
+# for i in seq:
+#     print(i,"SMS")
+
+# SURYA=range(5,20,2)
+# for i in SURYA:
+#     print(i,"SURYAJEET")
+
+# for i in range(0,100,5):
+#     if i==40:
+#         print(i,"SURYAJEET")
+#         break
+    # else:
+    #     print("not found")
+
+# n=int(input("enter a number:"))
+# for i in range(1,11):
+#     print(n*i)
