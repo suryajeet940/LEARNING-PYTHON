@@ -1,5 +1,5 @@
 #collection of unordered items.
-#elements must be unique ans are immutable.
+#elements must be unique and are immutable.
 
 
 collection={"suryajeet","surya","sms"}
