@@ -19,7 +19,7 @@ This repository contains my python practice pragrams as I learn:
 * Function calling
 * Recursion
 
-### [**FILE I/O**](file io.py)
+### [**FILE I/O**](file_io.py)
 * opening a file for reading,"r".
 * opening a file for overwrite,"w".
 * creating a file if not exist for reading or writing,"a".
