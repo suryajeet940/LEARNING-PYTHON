@@ -67,5 +67,42 @@ import os
 os.remove("demon.py")
 
 
+with open("demo.py","w") as f:
+    f.write("HI EVERYONE THIS IS SURYAJEET MAURYA .\n we arw learning python from apna college . ")
+    f.wrtite("using java .\n I like programing in java.")
+
+with open("demo.py","r") as f:
+    data=f.read()
+    print(data)
+
+with open("demo.py","r") as f:
+    data=f.read()
+    print(data)
+new_data=data.replace("python","java")
+print(new_data)
+
+with open("demo.py","w") as f:
+    f.write(new_data)
+
+word="learning"
+with open("demo.py","r"):
+    data =f.read()
+    if(data.find(word)!=-1):
+        print("found")
+    else:
+        print("not found")
 
 
+def check_for_line():
+    word="learning"
+    data=True
+    line_no=1
+    with open("demo.py","r") as f:
+        while data:
+            data =f.readline()
+            if (word in data):
+                print(line_no)
+                return
+            line_no+=1
+    return -1
+check_for_line()
