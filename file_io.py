@@ -106,3 +106,48 @@ def check_for_line():
             line_no+=1
     return -1
 check_for_line()
+
+
+def replace_in_file(filename, old, new):
+    with open(filename,"r") as f:
+        content=f.read()
+
+    with open(filename,"w") as f:
+        f.write(content.replace(old,new))
+
+replace_in_file("demo.py","java","python")
+replace_in_file("demo.py","python","java")
+
+def replace(filename,old,new):
+    with open(filename,"r") as f:
+        content=f.read()
+    content=content.replace(old,new)
+
+    with open(filename,"w") as f:
+        f.write(content)
+
+replace("demo.py","arw","are")
+
+
+def find(filename,word):
+    with open(filename,"r") as f:
+        data=f.read()
+  
+
+    if (data.find(word)!=-1):
+        print("found")
+    else:
+        print("not found")
+
+find("demo.py","SURYAJEET")
+
+def find(filename,word):
+    f=open(filename,"r")
+    data=f.read()
+    if word in data:
+        print("found")
+    else:
+        print("not found")
+
+find("demo.py","SMA")
+find("demo.py","MAURYA")
