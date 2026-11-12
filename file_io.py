@@ -151,3 +151,84 @@ def find(filename,word):
 
 find("demo.py","SMA")
 find("demo.py","MAURYA")
+
+
+def check_line(filename,word):
+    line_no=1
+    with open(filename,"r") as f:
+        for line in f:
+            if word in line:
+                print(line_no)
+                return
+            else:
+                print("not exist")
+            line_no+=1
+    return -1
+check_line("demo.py","SURYAJEET")
+check_line("demo.py","sma")
+
+
+### ##################################################################
+
+
+def count_word(filename,word):
+    with open(filename,"r") as f:
+        count=0
+        for line in f:
+           count+=line.count(word)
+        print(count)
+
+count_word("demo.py","SURYAJEET")
+count_word("demo.py","MAURYA")
+
+def count(filename,word):
+    with open(filename,"r") as f:
+        
+        data=f.read().count(word)
+        print(data)
+        
+
+count("demo.py","SURYAJEET")
+count("demo.py","sms")
+
+def no_line(filename):
+    with open(filename) as f:
+        count=0
+        for line in f:
+            count+=1
+        print(count)
+
+no_line("demo.py")
+
+def file_content(filename):
+    with open(filename) as f:
+        count=0
+        for line in f:
+            count+=1
+            print(count,line)
+
+file_content("demo.py")
+
+def longest_line(filename):
+    longest=""
+    with open(filename) as f:
+        
+        for line in f:
+            if len(line)>len(longest):
+                longest=line
+        print(longest)
+
+longest_line("demo.py")
+
+def find_all_line(filename,word):
+    line_no=0
+    line_numbers=[]
+    with open(filename) as f:
+        
+        for line in f:
+            line_no+=1
+            if word in line:
+                line_numbers.append(line_no)
+    return line_numbers       
+
+print(find_all_line("demo.py","SURYAJEET"))
